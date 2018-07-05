@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="In" max_length="40" name="x_58872_needit_product" type="collection">
+        <element label="Descrição" mandatory="true" max_length="200" name="descricao" type="string"/>
+        <element display="true" label="Nome" mandatory="true" max_length="150" name="nome" type="string"/>
+        <element label="Gestor" mandatory="true" max_length="32" name="u_gestor" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_gestor"/>
+        </index>
+    </element>
+</database>
